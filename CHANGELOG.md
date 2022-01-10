@@ -2,7 +2,7 @@
 
 ### Features
 - [#5090](https://github.com/blockscout/blockscout/pull/5090) - Allotted rate limit by IP
-- [#5080](https://github.com/blockscout/blockscout/pull/5080) - Alloted rate limit by a global API key
+- [#5080](https://github.com/blockscout/blockscout/pull/5080) - Allotted rate limit by a global API key
 
 ### Fixes
 - [#5088](https://github.com/blockscout/blockscout/pull/5088) - Store address transactions/token transfers in the DB
@@ -15,6 +15,7 @@
 ### Chore
 - [#5092](https://github.com/blockscout/blockscout/pull/5092) - Resolve vulnerable follow-redirects npm dep in ./apps/explorer
 - [#5091](https://github.com/blockscout/blockscout/pull/5091) - Refactor search page template
+- [#5082](https://github.com/blockscout/blockscout/pull/5082) - Elixir 1.12 -> 1.13
 - [#5081](https://github.com/blockscout/blockscout/pull/5081) - Add internal transactions fetcher disabled? config parameter
 - [#5063](https://github.com/blockscout/blockscout/pull/5063) - Resolve moderate NPM vulnerabilities with npm audit tool
 - [#5053](https://github.com/blockscout/blockscout/pull/5053) - Update ex_keccak lib

@@ -57,8 +57,6 @@ defmodule EthereumJSONRPC.DecodeError do
 
       request:
 
-        url: #{request_url}
-
         body: #{truncated_request_body}
 
       response:

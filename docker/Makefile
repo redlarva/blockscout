@@ -6,6 +6,16 @@ PG_CONTAINER_NAME = postgres
 PG_CONTAINER_IMAGE = postgres:12.5
 THIS_FILE = $(lastword $(MAKEFILE_LIST))
 
+
+COIN=ICX
+LOGO=/images/snow_logo.svg
+LOGO_FOOTER=/images/snow_logo.svg
+SUBNETWORK=SNOW
+COIN_NAME=ICZ
+ETHEREUM_JSONRPC_VARIANT=ganache
+ETHEREUM_JSONRPC_HTTP_URL=http://frost-rpc.icenetwork.io:9933
+ETHEREUM_JSONRPC_WS_URL=ws://frost-rpc.icenetwork.io:9944
+
 ifeq ($(SYSTEM), Linux)
 	HOST=localhost
 endif
@@ -414,8 +424,8 @@ else
 	@$(MAKE) -f $(THIS_FILE) migrate_only
 endif
 
-start: build postgres 
-	@echo "==> Starting blockscout"
+start: build postgres
+	@echo "==> Starting blockscout $(BLOCKSCOUT_CONTAINER_PARAMS)"
 	@docker run --rm --name $(BS_CONTAINER_NAME) \
 					$(BLOCKSCOUT_CONTAINER_PARAMS) \
 					-p 4000:4000 \
